@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tauri-apps/api": "^2",
@@ -23,6 +24,8 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@eslint/js": "^10.0.1",
     "@tauri-apps/cli": "^2",
     "@testing-library/dom": "^10.4.1",
@@ -38,7 +41,9 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
+    "husky": "^9.1.7",
     "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.5",
     "prettier": "^3.8.3",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.60.0",
@@ -48,6 +53,15 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx,json,css,html,md}": [
+      "prettier --write"
     ]
   }
 }
