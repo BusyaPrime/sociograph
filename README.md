@@ -48,6 +48,7 @@ pnpm tauri build  # produce a desktop build
 | `pnpm test:watch` | Run tests in watch mode           |
 | `pnpm test:cov`   | Run tests with coverage           |
 | `pnpm tauri`      | Run the Tauri CLI                 |
+| `pnpm prepare`    | Install Git hooks (Husky)         |
 
 ## Project structure
 
