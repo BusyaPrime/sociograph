@@ -4,4 +4,5 @@ pnpm-lock.yaml
 src-tauri/target
 src-tauri/gen
 src-tauri/icons
+src/assets/fonts
 *.svg
