@@ -1,5 +1,6 @@
+/// <reference types="vitest/config" />
 import { fileURLToPath } from "node:url";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
 const host = process.env.TAURI_DEV_HOST;
@@ -35,5 +36,11 @@ export default defineConfig(async () => ({
       // 3. Tell Vite to ignore watching `src-tauri`.
       ignored: ["**/src-tauri/**"],
     },
+  },
+
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./src/test/setup.ts"],
   },
 }));
