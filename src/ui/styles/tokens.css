@@ -1,0 +1,116 @@
+/**
+ * Design tokens — the single source of truth for the Sociograph "operations
+ * console" theme. Dark, cool, near-black canvas with a teal operator accent and
+ * status colors mapped to the game's core signals (trust, suspicion, exposure).
+ * Components reference these variables only; no raw colors in component CSS.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* ---- Surface layers (back to front) ---- */
+  --color-bg: #06090c;
+  --color-bg-raised: #0a0f14;
+  --color-surface: #0e151b;
+  --color-surface-raised: #131d25;
+  --color-surface-overlay: #18242d;
+
+  /* ---- Borders ---- */
+  --color-border: #1e2a33;
+  --color-border-strong: #2c3b46;
+
+  /* ---- Text ---- */
+  --color-text: #e6edf1;
+  --color-text-secondary: #a6b4be;
+  --color-text-muted: #8a99a3;
+  --color-text-inverse: #06090c;
+
+  /* ---- Accent: the operator / interactive ---- */
+  --color-accent: #34c8c0;
+  --color-accent-strong: #59d6cf;
+  --color-accent-dim: #11302f;
+
+  /* ---- Status (mapped to game signals) ---- */
+  --color-positive: #36d399; /* trust, partnership */
+  --color-positive-dim: #0f2c22;
+  --color-danger: #f2606a; /* suspicion, burn */
+  --color-danger-dim: #34161a;
+  --color-warning: #e8b341; /* exposure */
+  --color-warning-dim: #2e2410;
+  --color-info: #5ab0e8;
+  --color-info-dim: #11283a;
+
+  /* ---- Sociogram zones (outer to inner) ---- */
+  --zone-white: #c2ccd2;
+  --zone-blue: #5ab0e8;
+  --zone-yellow: #e8b341;
+  --zone-red: #f2606a;
+
+  /* ---- Typography ---- */
+  --font-sans: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+
+  --text-xs: 0.6875rem; /* 11px */
+  --text-sm: 0.8125rem; /* 13px */
+  --text-base: 0.875rem; /* 14px */
+  --text-lg: 1.0625rem; /* 17px */
+  --text-xl: 1.375rem; /* 22px */
+  --text-2xl: 1.875rem; /* 30px */
+  --text-3xl: 2.5rem; /* 40px */
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --tracking-tight: -0.01em;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.08em;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---- Radii ---- */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.55);
+  --shadow-glow-accent: 0 0 14px rgba(52, 200, 192, 0.18);
+
+  /* ---- Z-index scale ---- */
+  --z-base: 0;
+  --z-panel: 10;
+  --z-overlay: 30;
+  --z-modal: 50;
+  --z-toast: 60;
+
+  /* ---- Motion ---- */
+  --duration-fast: 140ms;
+  --duration: 220ms;
+  --duration-slow: 360ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --topbar-height: 52px;
+  --panel-width: 320px;
+}
