@@ -1,0 +1,78 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  height: var(--topbar-height);
+  padding: 0 var(--space-5);
+  background-color: var(--color-bg-raised);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.mark {
+  position: relative;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+.mark::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.name {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+}
+
+.tagline {
+  align-self: center;
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--color-border-strong);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-text-muted);
+}
+
+.readouts {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin: 0;
+}
+
+.readout {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+.readoutLabel {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-muted);
+}
+
+.readoutValue {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
