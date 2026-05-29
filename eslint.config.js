@@ -47,8 +47,8 @@ export default tseslint.config(
               message: "The engine must not call Tauri APIs.",
             },
             {
-              group: ["@ui", "@ui/*"],
-              message: "The engine must not depend on UI code.",
+              group: ["@ui", "@ui/*", "**/ui", "**/ui/**"],
+              message: "The engine must not depend on UI code (alias or relative path).",
             },
             {
               group: ["zustand", "zustand/*"],
