@@ -9,8 +9,11 @@
  */
 
 /** Semantic version of the engine's public contract. */
-export const ENGINE_VERSION = "0.2.0";
+export const ENGINE_VERSION = "0.3.0";
 
 export * from "./types";
 export * from "./rng";
 export * from "./state";
+export * from "./zones";
+export * from "./recruit";
+export * from "./turn";
